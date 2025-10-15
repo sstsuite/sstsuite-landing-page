@@ -65,6 +65,7 @@ function getClasses(variant, color, size, fullWidth, disabled) {
   <button
     class="btn"
     :class="getClasses(variant, color, size, fullWidth, disabled)"
+    v-bind="$attrs"
   >
     <slot />
   </button>

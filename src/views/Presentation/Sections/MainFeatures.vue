@@ -1,13 +1,13 @@
 <script setup>
-import aepMockup from "@/assets/img/macbook-2.png";
-import nhoMockup from "@/assets/img/iphones.png";
+import aepMockup from "@/assets/img/luminancia-app.png";
+import nhoMockup from "@/assets/img/aep-app.jpg";
 </script>
 
 <template>
   <section class="container py-4 main-features">
     <!-- Bloco 1: AEP -->
     <div class="row align-items-center g-4 py-3">
-      <div class="col-lg-6">
+      <div class="col-lg-7">
         <img
           :src="aepMockup"
           alt="Mockup do módulo AEP"
@@ -15,7 +15,7 @@ import nhoMockup from "@/assets/img/iphones.png";
           loading="lazy"
         />
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <h3 class="mb-2 feature-title">AEP – Avaliação Ergonômica Preliminar (NR-17)</h3>
         <p class="lead text-secondary feature-lead">
           Automatize suas avaliações ergonômicas e elimine a burocracia dos relatórios.
@@ -57,7 +57,7 @@ import nhoMockup from "@/assets/img/iphones.png";
         <img
           :src="nhoMockup"
           alt="Mockup do módulo NHO-11"
-          class="img-fluid"
+          class="img-fluid nho-image"
           loading="lazy"
         />
       </div>
@@ -91,6 +91,12 @@ import nhoMockup from "@/assets/img/iphones.png";
 .main-features .feature-note {
   font-size: 0.95rem;
   color: #4b5563;
+}
+
+.main-features .nho-image {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 991.98px) {

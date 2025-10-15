@@ -3,24 +3,28 @@ import { ref, computed } from "vue";
 
 const faqs = [
   {
+    q: "Os Relatórios são automáticos?",
+    a: "O sistema gera seus relatórios completos automaticamente, prontos para entregar ao cliente, sem necessidade de preenchimento manual. Todo o processo é 100% automatizado, economizando tempo e eliminando trabalho extra."
+  },
+  {
     q: "Os dados estão seguros?",
     a: "Todas as informações são armazenadas com criptografia e backups regulares, garantindo confidencialidade e integridade."
   },
   {
     q: "Posso importar meus documentos atuais?",
-    a: "Sim, você pode importar planilhas, PDFs e relatórios antigos para centralizar tudo no SSTSuite."
+    a: "Mesmo que você tenha relatórios em elaboração, é possível cadastrar os dados diretamente no sistema e gerar seus documentos — Avaliação Ergonômica Preliminar (AEP) ou Relatório de Luminância — sem necessidade de elaboração manual, economizando tempo."
   },
   {
     q: "O sistema permite múltiplos usuários?",
-    a: "Sim, dependendo do plano, você pode ter equipes trabalhando simultaneamente nos módulos AEP ou NHO-11."
+    a: "Sim, escolha um plano que inclua o número de usuários desejado e comece a colaborar com sua equipe."
   },
   {
-    q: "Quais são os limites de avaliações ou medições por plano?",
-    a: "Cada plano define limites mensais de situações de risco, avaliações ou downloads, conforme descrito na seção de Planos e Preços."
+    q: "Como funcionam os limites de uso de cada plano?",
+    a: "O limite de uso de cada plano é baseado em três pilares: número de usuários, quantidade de downloads e formulários preenchidos. Os formulários disponíveis são: Situação de Risco (AEP) e Avaliação de Luminância (Relatório de Luminância). Cada vez que um formulário é preenchido no sistema, ele conta como +1 no limite mensal do seu plano."
   },
   {
     q: "Como funciona o suporte técnico?",
-    a: "Oferecemos suporte via chat, e-mail e documentação completa para tirar dúvidas e auxiliar na utilização do sistema."
+    a: "Oferecemos suporte técnico via e-mail e WhatsApp, com resposta em até 48 horas."
   },
   {
     q: "O sistema acompanha mudanças nas normas NR-17 e NHO-11?",

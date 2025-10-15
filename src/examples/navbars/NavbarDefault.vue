@@ -225,21 +225,25 @@ const scrollToId = (id) => {
             </a>
           </li>
           <li class="nav-item mx-md-2">
-            <a 
-              class="nav-link ps-2 cursor-pointer d-md-none" 
-              :class="getTextColor()" 
-              @click.prevent="scrollToId('top')"
+            <a
+              class="nav-link ps-2 cursor-pointer d-md-none"
+              :class="getTextColor()"
+              href="https://www.sstsuite.com.br/contas/registro/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Registre-se
             </a>
-            
           </li>
+
         </ul>
         
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a
-              href="#"
+              href="https://www.sstsuite.com.br/contas/registro/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-sm mb-0"
               style="background-color: #0C5FCD; color: #fff;"
             >

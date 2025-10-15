@@ -1,6 +1,9 @@
 <script setup>
 import MaterialButton from "@/components/MaterialButton.vue";
 import aboutVisual from "@/assets/img/about-image.jpg";
+
+const REGISTER_URL = "https://www.sstsuite.com.br/contas/registro/";
+const goToRegister = () => window.open(REGISTER_URL, "_blank", "noopener,noreferrer");
 </script>
 
 <template>
@@ -67,6 +70,7 @@ import aboutVisual from "@/assets/img/about-image.jpg";
               color="info"
               size="lg"
               class="px-5 py-3 w-100 shadow-lg about-cta about-cta-btn"
+              @click="goToRegister"
             >
               Começar agora
             </MaterialButton>

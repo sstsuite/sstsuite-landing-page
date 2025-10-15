@@ -8,9 +8,15 @@
       <p class="subtitle">Centralize seus processos, automatize relatórios e elimine retrabalho</p>
 
       <div class="cta-wrapper">
-        <button class="cta-btn transition" aria-label="Solicitar demonstração">
+        <a
+          class="cta-btn transition"
+          href="https://www.sstsuite.com.br/contas/registro/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Solicitar demonstração"
+        >
           Registre-se agora
-        </button>
+        </a>
       </div>
     </div>
   </section>

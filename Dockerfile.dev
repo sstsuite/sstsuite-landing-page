@@ -1,0 +1,17 @@
+# syntax=docker/dockerfile:1
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copiar manifestos e instalar dependências
+COPY package*.json ./
+RUN npm ci --legacy-peer-deps
+
+# Copiar todo o código (volume sobreporá na hora do docker run)
+COPY . .
+
+# Expor a porta do Vite
+EXPOSE 5173
+
+# Rodar o dev server Vite
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

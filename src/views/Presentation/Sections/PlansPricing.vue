@@ -3,6 +3,9 @@ import { ref, computed } from "vue";
 
 const activeModule = ref("AEP");
 
+const REGISTER_URL = "https://www.sstsuite.com.br/contas/registro/";
+const goToRegister = () => window.open(REGISTER_URL, "_blank", "noopener,noreferrer");
+
 const genericFeatures = [
   "Acesso via desktop, tablet e celular",
   "Armazenamento seguro em nuvem",
@@ -170,7 +173,7 @@ const plans = computed(() => (activeModule.value === "AEP" ? aepPlans : nhoPlans
 
             <p class="target mb-3">{{ plan.target }}</p>
 
-            <button class="btn-primary-plan text-white w-100 mt-auto">
+            <button class="btn-primary-plan text-white w-100 mt-auto" @click="goToRegister">
               Começe agora
             </button>
           </div>
